@@ -14,7 +14,7 @@ module.exports = {
     // 博客数据源 目前只适配notion
     blog: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/3x/0617c54a5aa44763b7d9bd520a50d156?v=e33d178570b8443c86d02db111d9e219', // notion中文章表的链接
+        url: 'https://www.notion.so/0617c54a5aa44763b7d9bd520a50d156?v=e33d178570b8443c86d02db111d9e219', // notion中文章表的链接
         // 建议开启，可以大大提高build速度
         // 访问 https://github.com/settings/tokens 获取token 
         // export GitHubToken='yourtokenhere'
@@ -29,7 +29,7 @@ module.exports = {
     // 友链
     friendLink: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/3x/cf011543ab704dd79154a64a7c4d4f7b?v=084f3da6d83d4cbbadb0bbb9c06794db', // notion中友链表的链接
+        url: 'https://www.notion.so/cf011543ab704dd79154a64a7c4d4f7b?v=084f3da6d83d4cbbadb0bbb9c06794db', // notion中友链表的链接
     },
 
     // 下面的是可选组件
