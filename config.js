@@ -4,24 +4,24 @@
 module.exports = {
     // blog mate
     blogMeta: {
-        title: `Mayne's Blog`, //网站标题
+        title: `xxx's Blog`, //网站标题
         pageSize: 3, // 每页多少篇文章
-        description: `All things about Mayne`, // 网站描述 seo
-        siteUrl: `https://gine.me`, // 站点URL
+        description: `All things about xxx`, // 网站描述 seo
+        siteUrl: ``, // 站点URL
         aboutPostSlug: `10a70927d25a43d19acf14e0d36354e7`, //没有单独的about页面，about页面指向文章。
     },
 
     // 博客数据源 目前只适配notion
     blog: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/99623ef9630940cdb8524ba355831677?v=8366741ca7dd4b339c19484712e13563', // notion中文章表的链接
+        url: 'https://www.notion.so/3x/0617c54a5aa44763b7d9bd520a50d156?v=e33d178570b8443c86d02db111d9e219', // notion中文章表的链接
         // 建议开启，可以大大提高build速度
         // 访问 https://github.com/settings/tokens 获取token 
         // export GitHubToken='yourtokenhere'
-        openGithubCache: false, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
+        openGithubCache: true, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
         github: {
-            username: 'mayneyao', // github 用户名
-            repo: 'blog', // 作为blog缓存数据仓库的名称
+            username: 'findsomeoneyys', // github 用户名
+            repo: 'notionBlogCache', // 作为blog缓存数据仓库的名称
             branch: 'master' // 作为blog缓存数据仓库的分支
         },
     },
@@ -29,24 +29,24 @@ module.exports = {
     // 友链
     friendLink: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/71d6656af07e418a92b3fe966a4ba087?v=1329463e9dfe45899caf28d317b84d50', // notion中友链表的链接
+        url: 'https://www.notion.so/3x/cf011543ab704dd79154a64a7c4d4f7b?v=084f3da6d83d4cbbadb0bbb9c06794db', // notion中友链表的链接
     },
 
     // 下面的是可选组件
     // 评论
     comment: {
-        open: false, //默认关闭，仅适配disqus
+        open: true, //默认关闭，仅适配disqus
         sourceType: 'disqus',
         disqus: {
-            disqusShortname: 'maynes-blog' // 你的短域名
+            disqusShortname: '3xxx' // 你的短域名
         }
     },
 
     // 番剧
     bangumi: {
-        open: false, // 默认关闭
+        open: true, // 默认关闭
         sourceType: 'bilibili',
-        url: 'http://space.bilibili.com/ajax/Bangumi/getList?mid=22539301&page=1', // 替换自己为自己的mid （这里只获取了第一页的数据，有需要自行修改。）
+        url: 'http://space.bilibili.com/ajax/Bangumi/getList?mid=2892504&page=1', // 替换自己为自己的mid （这里只获取了第一页的数据，有需要自行修改。）
     },
 
     // 格言
